@@ -14,7 +14,7 @@ extension Constant {
         enum ServiceEndPoint: String {
             
             case BASE_URL = "https://newsapi.org/v2/everything?q=apple&from=2022-06-17&to=2022-06-17&sortBy=popularity&"
-            case API_KEY = "apiKey=476d05192e6c42e1b9ffacf403f3dbbe"
+            case API_KEY = "apiKey=YOUR_API_KEY"
             
             static func fetchArticles() -> String {
                 "\(ServiceEndPoint.BASE_URL.rawValue)\(ServiceEndPoint.API_KEY.rawValue)"
